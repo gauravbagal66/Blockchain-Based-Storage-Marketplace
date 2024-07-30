@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <title>List Storage</title>
+  <link rel="stylesheet" href="/storage-form/storage-form.css">
+</head>
+<body>
+  <header><%- include('navbar')  %></header>
+  
+  <div class="container mt-5">
+    <div class="card col-md-6 mx-auto">
+      <div class="card-body">
+        <h3 class="card-title">List Your Storage</h3>
+        
+        <form>
+          <div class="form-group">
+            <label for="teny">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+          </div>
+          <div>The Price for 1GB storage for 30 days will be 25 RS or 0.0001 ETH</div>
+          <div class="form-group">
+            <label for="capacity">Capacity:</label>
+            <input type="number" class="form-control" id="capacity" placeholder="Enter capacity" >
+          </div>
+          <div class="form-group">
+            <label for="tenure">Tenure: (days)</label>
+            <input type="number" class="form-control" id="tenure" placeholder="Enter tenure (in days)">
+          </div>
+          <div class="form-group">
+            <label for="price">Total Price:ETH</label>
+            <div  class="form-control" id="price"></div>
+          </div>
+          
+          <button id="submit-storage-form" class="btn btn-str"  style="display: block; margin: 0 auto; color: white;" >Submit</button>
+        </form>
+        
+      </div>
+    </div>
+  </div>
+
+
+
+  <footer><%- include('footer')  %></footer>
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+  
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/encryption/encryption.css">
+  <title>Encryption and Decryption</title>
+  
+</head>
+<body id="respo">
+<header><%- include('navbar')  %></header>
+<div class="container" >
+  <button class="btn btn-encrypt btn-generate" id="btn1"  >Generate Key</button>
+  <div class="row" id="cont">
+    <div class="col-md-5">
+      <h1>Encryption</h1>
+      <!-- Add encryption content here -->
+      <label for="originalFile"><h5>Original File:</h5></label>
+      <input type="file" id="originalFile" class="form-control mb-2" style="text-align: center;" >
+      <label for="key" class="key"><h5>Key:</h5> </label>
+      <input type="text" id="key-enc" class="form-control mb-2" style="text-align: center;">
+      <button class="btn btn-encrypt" id="encrypt-btn"  style="color: white;">Encrypt</button>
+    </div>
+    <div class="col-md-5">
+      <h1>Decryption</h1>
+      <!-- Add decryption content here -->
+      <label for="encryptedFile"><h5>Encryted File:</h5></label>
+      <input type="file" id="encryptedFile" class="form-control mb-2" style="text-align: center;">
+      <label for="key" class="key"><h5>Key:</h5> </label>
+      <input type="text" id="key-dec" class="form-control mb-2" style="text-align: center;">
+      <button class="btn btn-encrypt" id="decrypt-btn" style="color: white;">Decrypt</button>
+    </div>
+    </div>
+  </div>
+</div>
+<footer><%- include('footer')  %></footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script src="/encryption/encryption.js"></script>
+
+</body>
+</html>

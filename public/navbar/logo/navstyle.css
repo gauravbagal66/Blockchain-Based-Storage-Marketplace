@@ -1,0 +1,342 @@
+/*navbar*/
+.navbar .navbar-nav .nav-item a{
+    padding: 15px;
+   
+}
+.navbar .navbar-nav .nav-but {
+    padding: 10px;
+
+}
+
+.navbar-brand img{
+    height: 60px;
+    margin-left: 30px;
+}
+
+
+.btn{
+    position: relative;
+    width: 100px;
+    height: 45px;
+    background: transparent;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px solid #3ed9d9;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn::before{
+    content: "";
+    position: absolute;
+    height: 300%;
+    width: 100%;
+    background: linear-gradient(#25252b,#3ed9d9,#25252b
+    ,#3ed9d9);
+    top: -100%;
+    left: 0;
+    z-index: -1;
+    transition: .5s;
+}
+
+@media((min-width:200px)and (max-width:500px))
+{
+    .btn{
+        width: 100%;
+    }
+}
+
+.btn:hover::before{
+    top: 0;
+}
+
+.nav-link
+{
+    margin: 10px 15px ;
+}
+.nav-link:hover{
+    font-family: cursive;
+    border-radius: 7px;
+    background-color: #3ed9d9;
+    
+    /* color:black; */
+}
+
+#icon
+{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 0px 50px 0px 0px;
+}
+
+nav ul{
+    flex: 1;
+    text-align: right;
+    position: relative;
+    padding-left: 10%;
+}
+
+
+
+
+.container-fluid
+{
+    display: flex;
+    justify-content: end;
+    float: right;
+    /* background-color: white; */
+    border: none;
+
+}
+
+.nav-item
+{
+    display: flex;
+    justify-content: end;
+    float: right;
+    
+}
+
+
+
+.navbar-nav {
+   
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+    
+}
+
+.material-symbols-outlined
+{
+    margin: 15px 50px 0px 0px;
+    font-size: 30px;
+    
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+body {
+    background-color: var(--primary-color);
+    /* transition: background-color 1.8s, color 1.8s; */
+    overflow-x: hidden; /*Add this line to remove the scrollbar*/
+}
+
+.container-fluid {
+    background-color: var(--primary-color);
+    border: none;
+    /* transition: background-color 1.8s, color 1.8s; */
+}
+
+
+.login-btn{
+    display: block;
+}
+/* .signup-btn{
+    display: block;
+} */
+.logout-btn{
+    display: none;
+}
+.nav-item a {
+    font-size: 1.2em;
+    padding: 0.5rem 1rem;
+}
+
+#icon {
+    color: var(--secondary-color);
+    text-decoration: none;
+    /* transition: background-color 1.8s, color 1.8s; */
+}
+
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .show>.nav-link {
+    color: var(--secondary-color);
+    /* transition: background-color 1.8s, color 1.8s; */
+}
+
+.bg-dark {
+    background-color: var(--primary-color) !important;
+    /* Set the background color to white */
+    color: var(--secondary-color) !important;
+    /* Set the text color to black (optional, adjust as needed) */
+    /* transition: background-color 1.8s, color 1.8s; */
+}
+
+@media (max-width: 992px) {
+    #icon {
+       
+        font-size: 36px; 
+        width: 100%;
+        float: right;
+        
+    }
+
+    .btn{
+        margin-left: 21px;
+        /* width: 100%; */
+    }
+}
+
+@media((min-width:500px) and (max-width:991px))
+{
+    .btn{
+        width: 50%;
+    }
+
+}
+
+
+@media (max-width: 992px) {
+    /* .navbar .navbar-collapse {
+        display: none;
+    }
+
+    .navbar .navbar-toggler {
+        display: block;
+    }
+
+    .navbar .navbar-collapse.show {
+        display: block;
+    } */
+  
+
+    
+}
+
+@media(min-width:200px) and (max-width:500px)
+{
+    /* #navbarToggleBtn
+    {
+        width: 20%;
+        color: var(--secondary-color);
+        background: none;
+        text-decoration: none;
+        /* margin-left: 50px; */
+    /* }  */
+    #navbarSupportedContent
+    {
+        margin-left: -30px;
+    }
+    
+   
+
+    
+
+    /* body {
+        overflow: hidden;
+        position: relative;
+    } */
+
+    .btn
+    {
+        width: 100%;
+    }
+    .container-fluid
+    {
+        width: 100%;
+        
+    }
+  
+}
+
+.navbar-nav {
+    display: flex;
+    /* align-items: center; */
+  }
+  
+  .navbar-nav .nav-item {
+    white-space: nowrap;
+    margin-right: 15px; 
+  }
+  
+  @media (max-width: 767px) {
+    .navbar-nav {
+      flex-direction: column; 
+    }
+  
+    .navbar-nav .nav-item {
+      margin-right: 0; 
+    }
+  }
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ... existing CSS code ... */
+
+.profile-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    cursor: pointer;
+    position: relative;
+    margin-top: 0px;
+  }
+  
+  .profile-dropdown {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 15px; /* Adjust the distance from the right */
+    width: 250px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1000; /* Ensure it appears above other elements */
+    
+  }
+  
+  .profile-dropdown-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    color: #000;
+   
+  }
+
+  .profile-dropdown-item h2
+  {
+    font-size: 20px;
+    display: inline-block;
+  }
+  #username
+  {
+    font-size: 20px;
+    display: inline-block;
+  }
+  
+
+  
+  .btn-outline-light
+  {
+    margin-left: 30%;
+  }
+  
+  
+  /* Toggle Button */
+#navbarToggleBtn {
+    width: 40px; /* Adjust width as needed */
+    height: 40px; /* Adjust height as needed */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: var(--secondary-color);
+    background: none;
+    text-decoration: none;
+}
+
+/* Media Query for Mobile Screen */
+@media (max-width: 500px) {
+    #navbarToggleBtn {
+        top: 10px;
+        right: 10px;
+    }
+}

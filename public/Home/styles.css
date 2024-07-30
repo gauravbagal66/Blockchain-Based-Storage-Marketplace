@@ -1,0 +1,200 @@
+body {
+    background-color: var(--primary-color);
+    /* transition: background-color 1.8s, color 1.8s; */
+    overflow: scroll; /* Add this line to remove the scrollbar */
+}
+.homepg{
+    padding: 80px;
+
+}
+.row {
+    margin-top: 100px;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.col h2 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+    color: var(--secondary-color);
+}
+
+.col h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Kalam', cursive;
+    color: var(--secondary-color);
+    font-size: 3em;
+    margin: 10px 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    animation: animtext 6s steps(80, end) infinite;
+    transition: all cubic-bezier(0.1, 0.7, 1.0, 0.1);
+}
+.button {
+    background-color: #57c89f;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 4px var(--secondary-color);
+}
+.button a {
+    text-decoration: none;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    color: black;
+}
+.button:hover {
+    box-shadow: 0 0 10px var(--secondary-color);
+}
+#decmarket{
+    height: 65px;
+}
+@keyframes animtext {
+    from {
+        width: 0;
+        /* transition: all 3s ease-in-out; */
+    }
+}
+
+
+:root {
+    --primary-color: #edf2fc;
+    --secondary-color: #212121;
+}
+
+.dark-theme {
+    --primary-color: #000106;
+    --secondary-color: #fff;
+}
+
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .show>.nav-link {
+    color: var(--secondary-color);
+    /* transition: background-color 1.8s, color 1.8s; */
+}
+
+.bg-dark {
+    background-color: var(--primary-color) !important;
+    /* Set the background color to white */
+    color: var(--secondary-color) !important;
+    /* Set the text color to black (optional, adjust as needed) */
+    /* transition: background-color 1.8s, color 1.8s; */
+}
+
+
+
+
+
+
+
+
+.container-flex {
+    background-color: var(--primary-color);
+    transition: background-color 1.8s, color 1.8s;
+}
+
+
+
+
+.disk {
+    width: 100%;
+    margin-top: 3rem;
+    border-radius: 20px;
+}
+
+
+.bxs-cloud:before {
+    content: "\ed4a";
+    margin-left: 83%;
+  }
+
+  .centered-icon {
+    color: #2783d0;
+    font-size: 200px;
+  }
+
+@media((min-width:200px) and (max-width:500px)) {
+   
+    .col{
+        margin-top: 10px;
+    }
+    .col h2{
+        font-size: 1.4rem;
+    }
+    #col-1
+    {
+        margin-bottom: 2rem;
+    }
+    .disk {
+        width: 130%;
+        height: 100%;
+        margin-left: 0;
+        
+    }
+    .homepg{
+        margin-bottom: 8rem;
+    }
+    #decmarket 
+    {
+        font-size: 2rem;
+        height: 45px;
+        /* margin-left: 15%; */
+    }
+
+   
+}
+
+@media((min-width:500px) and (max-width:991px))
+{
+   
+
+    .disk {
+        width: 462px;
+        height: 233px;
+    }
+}
+
+@media ((min-width:992px)and (max-width: 1202px))
+{
+    .disk {
+        width: 462px;
+        height: 233px;
+    }
+   
+}
+
+
+
+@media(max-width:1132px)
+{
+    .disk
+    {
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+}
+
+
+#username{
+    color: black;
+    
+}
+
+@media (min-width: 200px) and (max-width: 500px) {
+  #respo {
+    overflow: auto; 
+  }
+}
