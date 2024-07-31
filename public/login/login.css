@@ -341,6 +341,21 @@ select {
 
 @media (min-width : 200px) and (max-width : 500px)
 {
+        .input-box input:focus ~ i,
+.input-box input:valid ~ i{
+    
+    color: black;
+}
+.input-box input:focus ~ label,
+.input-box input:valid ~ label{
+    
+    color: black;
+
+}
+
+ #pass{
+    font-size: small;
+}
    
     .info-content Login{
         font-size: small;
